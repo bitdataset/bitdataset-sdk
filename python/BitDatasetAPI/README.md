@@ -2,7 +2,6 @@ Requirements:
  * Python >= 3
 
 API controller for Bitdataset API
-API Documentation https://bitdataset.com/api_docs/
 
 Examples:
 
