@@ -16,7 +16,7 @@ from BitDatasetPandas import BitDatasetPandas
 api = BitDatasetAPI('YOUR API KEY')
 connector = BitDatasetPandas(api)
 
-# Historical quotes"
+# Historical quotes
 data = connector.load_quotes(['OKEX:BTCUSDT', 'BITMEX:XBTUSD'], datetime.date(2018, 9, 1), datetime.date(2018, 9, 2), 5)
 print(data)
 
