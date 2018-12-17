@@ -13,6 +13,14 @@ class BitDatasetPandas:
 
 
     def load_quotes(self, instruments, start, end=None, limit=None):
+        """
+        Load quotes data
+        :param instruments: str instrument or list instruments to load
+        :param start: load from datetime
+        :param end: load to datetime
+        :param limit: limit of quotes to load
+        :return: OrderedDict with data in pandas DataFrame
+        """
         if not isinstance(instruments, list):
             instruments = [instruments]
         r = OrderedDict()
@@ -23,6 +31,14 @@ class BitDatasetPandas:
 
 
     def load_trades(self, instruments, start, end=None, limit=None):
+        """
+        Load trades data
+        :param instruments: str instrument or list instruments to load
+        :param start: load from datetime
+        :param end: load to datetime
+        :param limit: limit of trades to load
+        :return: OrderedDict with data in pandas DataFrame
+        """
         if not isinstance(instruments, list):
             instruments = [instruments]
         r = OrderedDict()
@@ -33,6 +49,15 @@ class BitDatasetPandas:
 
 
     def load_ohlcv(self, instruments, period, start, end=None, limit=None):
+        """
+        Load OHLCV data
+        :param instruments: str instrument or list instruments to load
+        :param period: period of OHLCV bars
+        :param start: load from datetime
+        :param end: load to datetime
+        :param limit: limit of OHLCV to load
+        :return: OrderedDict with data in pandas DataFrame
+        """
         if not isinstance(instruments, list):
             instruments = [instruments]
         r = OrderedDict()
@@ -43,6 +68,13 @@ class BitDatasetPandas:
 
 
     def latest_quotes(self, instruments, start_from, limit=None):
+        """
+        Load latest quotes data
+        :param instruments: str instrument or list instruments to load
+        :param start_from: load from datetime
+        :param limit: limit of quotes to load
+        :return: OrderedDict with data in pandas DataFrame
+        """
         if not isinstance(instruments, list):
             instruments = [instruments]
         r = OrderedDict()
@@ -53,6 +85,13 @@ class BitDatasetPandas:
 
 
     def latest_trades(self, instruments, start_from, limit=None):
+        """
+        Load latest trades data
+        :param instruments: str instrument or list instruments to load
+        :param start_from: load from datetime
+        :param limit: limit of trades to load
+        :return: OrderedDict with data in pandas DataFrame
+        """
         if not isinstance(instruments, list):
             instruments = [instruments]
         r = OrderedDict()
@@ -63,6 +102,14 @@ class BitDatasetPandas:
 
 
     def latest_ohlcv(self, instruments, period, start_from, limit=None):
+        """
+        Load latest OHLCV data
+        :param instruments: str instrument or list instruments to load
+        :param period: period of OHLCV bars
+        :param start_from: load from datetime
+        :param limit: limit of OHLCV to load
+        :return: OrderedDict with data in pandas DataFrame
+        """
         if not isinstance(instruments, list):
             instruments = [instruments]
         r = OrderedDict()

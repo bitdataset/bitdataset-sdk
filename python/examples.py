@@ -1,5 +1,5 @@
 import datetime
-from BitDatasetAPI.BitDatasetAPI import BitDatasetAPI
+import BitDatasetAPI
 from BitDatasetPandas import BitDatasetPandas
 
 
@@ -23,15 +23,15 @@ data = connector.load_ohlcv('OKEX:BTCUSDT', 'M1', datetime.date(2018, 9, 1), dat
 print(data)
 
 
-print("latest quotes")
+print("Latest quotes")
 data = connector.latest_quotes('OKEX:BTCUSDT', datetime.date(2018, 9, 1), 5)
 print(data)
 
-print("latest trades")
+print("Latest trades")
 data = connector.latest_trades('OKEX:BTCUSDT', datetime.date(2018, 9, 1), 5)
 print(data)
 
-print("latest ohlcv")
+print("Latest ohlcv")
 data = connector.latest_ohlcv('OKEX:BTCUSDT', 'M1', datetime.date(2018, 9, 1), 5)
 print(data)
 
