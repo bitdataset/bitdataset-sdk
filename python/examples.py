@@ -2,8 +2,6 @@ import datetime
 import BitDatasetAPI
 from BitDatasetPandas import BitDatasetPandas
 
-
-
 api = BitDatasetAPI('YOUR API KEY')
 connector = BitDatasetPandas(api)
 
@@ -27,9 +25,11 @@ print("Latest quotes")
 data = connector.latest_quotes('OKEX:BTCUSDT', datetime.date(2018, 9, 1), 5)
 print(data)
 
+
 print("Latest trades")
 data = connector.latest_trades('OKEX:BTCUSDT', datetime.date(2018, 9, 1), 5)
 print(data)
+
 
 print("Latest ohlcv")
 data = connector.latest_ohlcv('OKEX:BTCUSDT', 'M1', datetime.date(2018, 9, 1), 5)

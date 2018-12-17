@@ -2,7 +2,6 @@ from BitDatasetAPI import BitDatasetAPI
 import datetime
 
 test_key = 'YOUR_API_KEY'
-
 api = BitDatasetAPI(test_key)
 
 
