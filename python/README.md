@@ -11,7 +11,7 @@ pip install bitdataset
 
 ```python
 import datetime
-from BitDatasetAPI import BitDatasetAPI
+from bitdataset import BitDatasetAPI
 
 test_key = 'YOUR_API_KEY'
 api = BitDatasetAPI(test_key)
@@ -88,8 +88,7 @@ for quote in quotes_historical_data:
 
 ```python
 import datetime
-from BitDatasetAPI import BitDatasetAPI
-from BitDatasetPandas import BitDatasetPandas
+from bitdataset import BitDatasetAPI, BitDatasetPandas
 
 
 api = BitDatasetAPI('YOUR API KEY')
