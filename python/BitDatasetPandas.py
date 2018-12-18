@@ -1,7 +1,6 @@
 import pandas as pd
 from datetime import datetime, timedelta
 from collections import OrderedDict
-from BitDatasetAPI.BitDatasetAPI import BitDatasetAPI
 
 class BitDatasetPandas:
 
